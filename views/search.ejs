@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movie Finder</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+
+    <style>
+      body {
+        background-image: url("assets/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container text-center ">
+      <dv class="content">
+        <h1>Search for movies & Tv Series</h1>
+        <form action="/results" method="GET">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="input-group input-group-lg">
+                <input
+                  type="text"
+                  name="search"
+                  class="form-control input-lg"
+                  placeholder="Title"
+                />
+                <span class="input-group-btn">
+                  <button class="btn btn-success btn-lg" type="submit">
+                    Search
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </dv>
+    </div>
+  </body>
+</html>
