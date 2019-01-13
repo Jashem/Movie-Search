@@ -25,6 +25,4 @@ app.get("/results", function(req, res) {
   });
 });
 
-app.listen(3000, function() {
-  console.log("Movie App has started!!");
-});
+app.listen(process.env.PORT, process.env.IP);
